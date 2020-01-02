@@ -1,0 +1,64 @@
+body{
+    background-color: grey;
+    text-align: center;
+}
+
+.top-row{
+    display: inline-block;
+}
+
+#main{
+    height: 100px;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+#second{
+    padding: 70px;
+}
+
+.topbutton{
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 4px;
+    border: 1px solid black;
+    width: 200px;
+    background-color: cyan;
+}
+
+#timer{
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif;
+}
+
+#minutes{
+    width: 100%;
+    margin: auto;
+}
+
+#seconds{
+    width: 100%;
+    margin: auto;
+}
+
+.botbutton{
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 4px;
+    border: 1px solid black;
+    width: 100px;
+    background-color: chartreuse;
+}
+
+header{
+    font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif;
+}
+
+.input{
+    width: 50%;
+    font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif;
+}
