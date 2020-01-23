@@ -9,23 +9,64 @@
     
 </head>
 
-
-<body>
-    <div id='main'>
-        <div class='top-row'><button class='topbutton' id='pomodoro'> Pomodoro </button> <button class='topbutton'> Short break </button> <button class='topbutton'> Long break </button> </div>
-        <div id='timer'><div id='minutes' class='center'></div> <div id='colon'>:</div> <div id='seconds'></div></div></div>
+<body id='body'>
+    <div id ='bg'>
+        <div id='settings-container'>
         
+            <div class='top-row'><button class='topbutton' id='pomodoro'> Pomodoro </button> <button class='topbutton'> Short break </button> <button class='topbutton'> Long break </button> </div>
+                <table id='main'>
+                    <tr id='timer'>
+                        <td id='minutes'>
+
+                        </td>
+                        <td id='colon'>
+                            :
+                        </td>
+                        <td id='seconds'>
+
+                        </td>
+                    </tr>
+                </table>
+
+        <div id='second'>
+            <div class='bottom-row'><button id='pause' class='botbutton'> Pause </button> <button id='continue' class='botbutton'> Continue </button> <button class='botbutton'> Restart </button> </div>
+            <header>Right now</header>
+            <textarea id ='right-now' class='input'></textarea>
+            <header>Today</header>
+            <textarea id ='today' class='input'></textarea>
+            <header>Long term</header>
+            <textarea id ='long-term' class='input'></textarea>
+        </div>
+
+        <div id='sidebar'>
+            <h1>Choose your theme:</h1>
+            <button type='button' class='theme' id='beachButton'>Beach</button>
+            <button type='button' class='theme' id='mtnButton'>Mountain</button>
+            <button type='button' class='theme' id='lakeButton'>Lake</button>
+            <button type='button' class='theme' id='farmButton'>Farm</button>
+            <button type='button' class='theme' id='cafeButton'>Cafe</button>
+            &nbsp;<br>
+            &nbsp;<br>
+            <button type='button' class='theme' id='settingsButton'>Settings</button>
+        </div>
+            
+                <form action='/' method= 'GET' id='settings'>
+                    <label> Work Time </label>
+                    <input class='settingInput' type='number' id='workInput'> 
+                    
+                    <label id='short-break'> Short Break </label>
+                    <input class='settingInput' id='shortBreak'> 
+
+                    <label id='long-break'> Long Break </label>
+                    <input class='settingInput' id='longBreak'>
+
+                    <button id = 'set-values'>Submit</button>
+                </form>
+            </div>
     </div>
 
-<div id='second'>
-    <div class='bottom-row'><button class='botbutton'> Pause </button> <button class='botbutton'> Continue </button> <button class='botbutton'> Restart </button> </div>
-    <header>Right now</header>
-    <textarea id ='right-now' class='input'></textarea>
-    <header>Today</header>
-    <textarea id ='today' class='input'></textarea>
-    <header>Long term</header>
-    <textarea id ='long-term' class='input'></textarea>
-</div>
 <script src= "script.js"></script>
 </body>
 </html>
+
+<!-- To do:  make buttons work -->
